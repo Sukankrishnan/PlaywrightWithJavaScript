@@ -1,2 +1,2 @@
 # PlaywrightWithJavaScript
-Projects of Playwright with JavaScript
+Projects of Playwright with TypeScript
