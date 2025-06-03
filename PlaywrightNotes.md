@@ -26,5 +26,15 @@ To run specific test function
 To run in debug mode
     npx playwright test --project=chromium --debug
 
-To autogenerate code
+To autogenerate code (By default, it is chromium)
     npx playwright codegen
+
+To autogenerate code in specific browser
+    npx playwright codegen --browser webkit
+
+To autogenerate code and save in the file 
+    npx playwright codegen -o ./tests/codeGenCode.spec.ts (-o is output file)
+
+
+To run in specific browser window size
+    npx playwright codegen --viewport-size=800,700
