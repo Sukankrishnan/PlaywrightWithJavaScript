@@ -51,6 +51,18 @@ To autogenerate code and save in the file
         npx playwright codegen -o ./tests/codeGenCode.spec.ts (-o is output file)
 
 
-To run in specific browser window size
+To view the browser window size
 
         npx playwright codegen --viewport-size=800,700
+
+To view the browser in device screen size
+
+        npx playwright codegen --device="iPhone 11 pro"
+
+To get help for codegen
+
+        npx playwright codegen --help
+
+To view trace
+
+        npx playwright show-trace ./test-results/codeGenCode-test-chromium-retry1/trace.zip
