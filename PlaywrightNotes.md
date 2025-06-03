@@ -1,56 +1,56 @@
 To run headless mode
 
-    npx playwright test
+        npx playwright test
 
 To run specific test. Copy the relative path of a test.
 
-    npx playwright test ./tests/firstTest.spec.ts
+        npx playwright test ./tests/firstTest.spec.ts
 
 To run multiple tests
 
-    npx playwright test firstTest.spec.ts secondTest.spec.ts
+        npx playwright test firstTest.spec.ts secondTest.spec.ts
 
-    or
+        or
 
-    npx playwright test firstTest secondTest
+        npx playwright test firstTest secondTest
 
 To run in headed mode
 
-    npx playwright test --headed
+        npx playwright test --headed
 
-    or
+        or
 
-    add Headless: false in playwright.config.ts
+        add Headless: false in playwright.config.ts
 
 To run only in specific browser in headed mode
 
-    npx playwright test firstTest --project=chromium --headed
+        npx playwright test firstTest --project=chromium --headed
 
 To run in all the 3 browsers parallely
 
-    npx playwright test workers 3
+        npx playwright test workers 3
 
 To run specific test function
 
-    npx playwright test -g 'secondFunction'
+        npx playwright test -g 'secondFunction'
 
 To run in debug mode
 
-    npx playwright test --project=chromium --debug
+        npx playwright test --project=chromium --debug
 
 To autogenerate code (By default, it is chromium)
 
-    npx playwright codegen
+        npx playwright codegen
 
 To autogenerate code in specific browser
 
-    npx playwright codegen --browser webkit
+        npx playwright codegen --browser webkit
 
 To autogenerate code and save in the file 
 
-    npx playwright codegen -o ./tests/codeGenCode.spec.ts (-o is output file)
+        npx playwright codegen -o ./tests/codeGenCode.spec.ts (-o is output file)
 
 
 To run in specific browser window size
 
-    npx playwright codegen --viewport-size=800,700
+        npx playwright codegen --viewport-size=800,700
