@@ -66,3 +66,15 @@ To get help for codegen
 To view trace
 
         npx playwright show-trace ./test-results/codeGenCode-test-chromium-retry1/trace.zip
+
+To enable trace while running
+
+        npx playwright test --trace on
+
+        npx playwright test --trace off
+
+        npx playwright test --trace retain-on-failure
+
+        npx playwright test --trace on-first-retry
+
+        npx playwright test --trace on-all-retries
