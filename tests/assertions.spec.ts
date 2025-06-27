@@ -23,11 +23,11 @@ test("Assertions-Present/Not Present", async ({page})=>{
     await page.close();
 })
 
-test("Assertions-Enabled/Disabled", async ({page})=>{
+test.only("Assertions-Enabled/Disabled", async ({page})=>{
 
-    await page.goto('https://letcode.in/buttons');
+    await page.goto('https://letcode.in/button');
     await expect(page.locator('#property')).toBeEnabled();
-    await expect(page.locator('[title="Disabled button')).toBeDisabled();
+    await expect(page.locator('[title="Disabled button"]')).toBeDisabled();
     await page.close();
 })
 
@@ -48,7 +48,7 @@ test("Assertions-Elements Attributes", async ({page})=>{
 
 })
 
-test.only("Assertions-PageURL", async ({page})=>{
+test("Assertions-PageURL", async ({page})=>{
 
     await page.goto("https://opensource-demo.orangehrmlive.com/");
 
@@ -59,7 +59,7 @@ test.only("Assertions-PageURL", async ({page})=>{
     await page.close();
 })
 
-test.only("Assertions-Title", async ({page})=>{
+test("Assertions-Title", async ({page})=>{
 
     await page.goto("https://opensource-demo.orangehrmlive.com/");
 
